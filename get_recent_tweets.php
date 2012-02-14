@@ -43,7 +43,7 @@ class Twitter {
         function cmp($a, $b) { return strcmp($a['unixtime'], $b['unixtime']); } 
         usort($get_tweets, "cmp");
     
-        //return the sorted tweets, end of get_json_call
+        //return the sorted tweets, end of get_json_data call
         return array_reverse($get_tweets);
     }	
 
