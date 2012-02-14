@@ -1,6 +1,4 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
 
 class Twitter {
 
@@ -12,7 +10,7 @@ class Twitter {
             $users = implode(',', $users);
         } elseif (is_string($users)) {
         } else {
-            echo '$users must be either an array or string with users deliminated by commas';
+            echo 'ERROR: $users must be either an array or string with users deliminated by commas';
         }
 
 
