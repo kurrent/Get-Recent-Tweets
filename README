@@ -1,0 +1,12 @@
+Get Recent Tweets
+
+this is just a quick and dirty class to pull all of the most recent tweets from multiple users(up to 100), then sorted and returned by most recent
+all users are combined into 1 single API call to twitter 
+
+how to use:
+==========
+
+1.)include get_recent_tweets.php 
+2.)run $twitter->get_tweets($users) where $users is your array (or string with users comma seperated) of users you want to get the most recent tweets for.
+
+
