@@ -41,9 +41,10 @@ class Twitter {
 
         //sort by most recent date
         function cmp($a, $b) { return strcmp($a['unixtime'], $b['unixtime']); } 
-            usort($get_tweets, "cmp");
+        usort($get_tweets, "cmp");
+    
+        //return the sorted tweets, end of get_json_call
         return array_reverse($get_tweets);
-
     }	
 
     //output tweets - you will want to style this to your liking
