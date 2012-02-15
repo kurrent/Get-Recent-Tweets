@@ -8,8 +8,7 @@ class Twitter {
         //test $users to see if array or string
         if (is_array($users)) {
             $users = implode(',', $users);
-        } elseif (is_string($users)) {
-        } else {
+        } elseif (!is_string($users)) {
             echo 'ERROR: $users must be either an array or string with users deliminated by commas';
         }
 
